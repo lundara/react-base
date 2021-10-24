@@ -1,0 +1,15 @@
+@import "primereact/resources/themes/saga-blue/theme.css", "primereact/resources/primereact.min.css",
+    "primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import "./services/theme.scss";
+
+body {
+    font-family: Poppins;
+}
+
+.avatar-init {
+    background-color: $primary;
+}
+.p-avatar-text{
+    color: #ffffff;
+}

@@ -1,0 +1,38 @@
+#wrapper {
+    overflow-x: hidden;
+}
+
+.page-content-wrapper {
+    min-width: 100vw;
+    background-color: #e0e0e0;
+    padding: 30px;
+}
+
+.content-header-title {
+    color: #636363;
+    font-weight: 500;
+}
+
+.card {
+    min-height: 600px;
+    box-shadow: 0 0 15px 0 rgba(34, 41, 47, 0.1);
+}
+
+span,
+p {
+    color: #3a3a3a;
+    font-size: 15px;
+}
+
+@media (max-width: 320px) {
+    .page-content-wrapper {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+}

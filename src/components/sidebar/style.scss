@@ -1,0 +1,90 @@
+.sidebar-wrapper {
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(34, 41, 47, 0.05);
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+.sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+.list-group {
+    padding: 15px;
+}
+
+.list-group-item {
+    border: none !important;
+    padding: 10px 15px 10px 20px;
+    transition: padding 0.2s linear, padding 0.2s linear;
+}
+.list-group-item.active {
+    border-radius: 4px;
+    // box-shadow: 0 0 10px 1px rgba(115, 103, 240, 0.7);
+    // background-color: #7367f0;
+    box-shadow: 0 0 10px 1px rgba(55, 81, 126, 0.7);
+    background-color: #37517e;
+}
+.list-group-item.active:focus {
+    background-color: #37517e;
+}
+.list-group-item:hover {
+    padding: 10px 15px 10px 30px;
+    background-color: #fff;
+}
+.list-group-item:focus {
+    background-color: #fff;
+}
+.list-group-item.active:hover {
+    padding-left: 30px;
+    background-color: #37517e;
+}
+.menu-item {
+    max-height: 0;
+    padding-left: 15px;
+    opacity: 0;
+    -webkit-transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    -o-transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
+}
+.menu-item.show {
+    opacity: 1;
+    max-height: 100px;
+}
+.dropdown-icon {
+    margin-top: 5px;
+}
+.dropdown-icon {
+    transform: rotate(0deg);
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+.dropdown-icon.show {
+    transform: rotate(90deg);
+}
+
+.sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+.sidebar-wrapper.toggle {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    .sidebar-wrapper.toggle {
+        margin-left: -15rem;
+    }
+}
